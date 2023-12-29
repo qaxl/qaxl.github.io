@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: monospace, sans-serif;
+    background-color: #161616;
+    color: white;
+}
+
+.tn {
+    background-color: #222222;
+    overflow: hidden;
+}
+
+.tn a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+}
+
+.tn a:hover {
+    background-color: #292929;
+    color: white;
+}
+
+.tn a.active {
+    background-color: #161616;/* rgb(41, 41, 41); */
+    color: white;
+}
+
+.centered {
+    text-align: center;
+}
+
+.warning {
+    color: red;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-gap: 20px;
+}
+
+.card {
+    display: grid;
+    background-color: #222222;
+    text-align: center;
+    grid-template-rows: max-content 200px 1fr;
+}
