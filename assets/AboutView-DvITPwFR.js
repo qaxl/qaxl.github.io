@@ -1,0 +1,1 @@
+import{r as o,o as a,c as s,a as r,t as n}from"./index-89sw3n2D.js";const c={class:"about"},d={__name:"AboutView",setup(u){const e=o(0);return(l,t)=>(a(),s("div",c,[r("button",{class:"bg-blue-500 hover:bg-blue-800 dark:text-white py-2 px-4 rounded-md",onClick:t[0]||(t[0]=i=>e.value++)},"Increase counter "+n(e.value),1)]))}};export{d as default};
