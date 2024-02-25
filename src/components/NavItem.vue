@@ -1,20 +1,24 @@
-<template>
-  <li>
-    <a
-      :href="href"
-      :class="['block px-3 py-2 rounded-md', isActive ? 'bg-sky-500 text-white' : 'bg-slate-50']"
-    >
-      <slot></slot>
-    </a>
-  </li>
-</template>
-
-<script setup>
+<script setup lang="ts">
 defineProps({
   href: {
     type: String,
     required: true
-  },
-  isActive: Boolean
+  }
 })
 </script>
+
+<template>
+  <li>
+    <RouterLink :to="href">
+      <a
+        v-if="(href == '/' && $route.name == 'home') || href.substring(1) == $route.name"
+        class="block px-7 py-3 text-white bg-zinc-800 hover:underline"
+      >
+        <slot></slot>
+      </a>
+      <a v-else class="block px-7 py-3 text-white bg-zinc-950 hover:underline">
+        <slot></slot>
+      </a>
+    </RouterLink>
+  </li>
+</template>

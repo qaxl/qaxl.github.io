@@ -4,6 +4,8 @@ import TheWelcome from '../components/TheWelcome.vue'
 
 <template>
   <main>
-    <TheWelcome />
+    <div class="flex justify-center items-center min-h-screen">
+      <TheWelcome />
+    </div>
   </main>
 </template>
